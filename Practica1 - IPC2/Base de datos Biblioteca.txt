@@ -1,0 +1,32 @@
+CREATE DATABASE BIBLIOTECA;
+
+
+CREATE TABLE Cliente (
+ID_Cliente int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Nombre varchar(50),
+Apellido varchar(50),
+Direccion varchar(50),
+Telefono varchar(50),
+Carnet varchar(50),
+DPI varchar(50),
+Reservas int,
+Prestamos int,
+)
+CREATE TABLE Libro (
+ID_Libro int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Nombre varchar(50),
+Autor varchar(50),
+Paginas varchar(50),
+Tema varchar(50),
+Prestados int,
+Reserva int,
+Cantidad int,
+)
+CREATE TABLE Prestamo (
+ID_Prestasmo int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+FechaPrestamo date,
+FechaEntrega date,
+ID_Libro integer FOREIGN KEY REFERENCES Libro (ID_Libro),
+ID_Cliente integer FOREIGN KEY REFERENCES Cliente (ID_Cliente),
+)
+

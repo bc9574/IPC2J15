@@ -1,0 +1,6 @@
+c:\users\byron\documents\visual studio 2013\Projects\WebServiceHoySi\WebServiceHoySi\bin\WebServiceHoySi.dll.config
+c:\users\byron\documents\visual studio 2013\Projects\WebServiceHoySi\WebServiceHoySi\bin\WebServiceHoySi.dll
+c:\users\byron\documents\visual studio 2013\Projects\WebServiceHoySi\WebServiceHoySi\bin\WebServiceHoySi.pdb
+c:\users\byron\documents\visual studio 2013\Projects\WebServiceHoySi\WebServiceHoySi\obj\Debug\WebServiceHoySi.csprojResolveAssemblyReference.cache
+c:\users\byron\documents\visual studio 2013\Projects\WebServiceHoySi\WebServiceHoySi\obj\Debug\WebServiceHoySi.dll
+c:\users\byron\documents\visual studio 2013\Projects\WebServiceHoySi\WebServiceHoySi\obj\Debug\WebServiceHoySi.pdb

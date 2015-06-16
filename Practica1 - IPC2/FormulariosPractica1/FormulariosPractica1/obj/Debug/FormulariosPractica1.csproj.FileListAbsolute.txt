@@ -1,0 +1,12 @@
+c:\users\byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\bin\Debug\FormulariosPractica1.exe.config
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\bin\Debug\FormulariosPractica1.exe
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\bin\Debug\FormulariosPractica1.pdb
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\obj\Debug\FormulariosPractica1.csprojResolveAssemblyReference.cache
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\obj\Debug\FormulariosPractica1.Form1.resources
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\obj\Debug\FormulariosPractica1.Properties.Resources.resources
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\obj\Debug\FormulariosPractica1.csproj.GenerateResource.Cache
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\obj\Debug\FormulariosPractica1.exe
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\obj\Debug\FormulariosPractica1.pdb
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\obj\Debug\FormulariosPractica1.InscribeLibro.resources
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\obj\Debug\FormulariosPractica1.ConsultarLibros.resources
+C:\Users\Byron\documents\visual studio 2013\Projects\FormulariosPractica1\FormulariosPractica1\obj\Debug\FormulariosPractica1.MasLibros.resources
