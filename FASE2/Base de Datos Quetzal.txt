@@ -1,0 +1,96 @@
+CREATE DATABASE QUETZAL;
+USE QUETZAL;
+
+CREATE TABLE Cliente(
+ID_Cliente int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Nombre varchar(50),
+Apellido varchar(50),
+DPI int,
+Casilla int,
+)
+
+CREATE TABLE Sede(
+ID_Sede int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+pais varchar(50),
+direccion varchar(50),
+telefono varchar(50),
+capacidad int,
+)
+CREATE TABLE Sucursal(
+ID_Sucursal int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+pais varchar(50),
+direccion varchar(50),
+telefono varchar(50),
+capacidad int,
+ID_Sede integer FOREIGN KEY REFERENCES Sede(ID_Sede), 
+)
+
+CREATE TABLE Departamento(
+ID_Departamento int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Codigo int,
+Descripcion varchar(50),
+ID_Sucursal integer FOREIGN KEY REFERENCES Sucursal(ID_Sucursal), 
+)
+
+CREATE TABLE Puesto(
+ID_Puesto int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Descripcion varchar(50),
+
+)
+
+CREATE TABLE Empleado(
+ID_Empleado int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Nombre varchar(50),
+Apellido varchar(50),
+DPI int,
+ID_Departamento integer FOREIGN KEY REFERENCES Departamento(ID_Departamento), 
+ID_Puesto integer FOREIGN KEY REFERENCES Puesto(ID_Puesto), 
+)
+CREATE TABLE Usuario(
+ID_Usuario int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Usuario varchar(50),
+Contraseña varchar(50),
+TipoUsuario varchar(50),
+ID_Cliente integer FOREIGN KEY REFERENCES Cliente(ID_Cliente) NULL, 
+ID_Empleado integer FOREIGN KEY REFERENCES Empleado(ID_Empleado) NULL, 
+)
+
+
+CREATE TABLE Categoria(
+Categoria varchar(50) PRIMARY KEY NOT NULL,
+Porcentaje int,
+
+)
+
+CREATE TABLE Lote(
+ID_Lote int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Codigo int,
+Descripcion varchar(50),
+ID_Sucursal integer FOREIGN KEY REFERENCES Sucursal(ID_Sucursal), 
+
+)
+CREATE TABLE Paquete(
+ID_Paquete int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Peso int,
+Descripcion varchar(50),
+Casilla int,
+ID_Lote integer FOREIGN KEY REFERENCES Lote(ID_Lote), 
+Categoria varchar(50) FOREIGN KEY REFERENCES Categoria(Categoria), 
+ID_Cliente INTEGER FOREIGN KEY REFERENCES Cliente(ID_Cliente),
+)
+
+CREATE TABLE DetalleFactura(
+ID_DetalleFactura int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Descripcion varchar(50),
+ID_Paquete integer FOREIGN KEY REFERENCES Paquete(ID_Paquete),
+
+)
+
+
+CREATE TABLE Factura(
+ID_Factura int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Serie int,
+Fecha varchar(50),
+ID_DetalleFactura integer FOREIGN KEY REFERENCES DetalleFactura(ID_DetalleFactura), 
+)
+
